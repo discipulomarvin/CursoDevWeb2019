@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- Estilo customizado -->		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<!-- Bootstrap CSS --> 
+		<!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+
+		<!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+		  <link href="fontawesome-free-5.10.0-web/css/fontawesome.css" rel="stylesheet">
+		  <link href="fontawesome-free-5.10.0-web/css/brands.css" rel="stylesheet">
+		  <link href="fontawesome-free-5.10.0-web/css/solid.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+	    <title>Meu site</title>
+
+	    <!-- Javascript externo --> 
+	    <script type="text/javascript" src="javascript/js.js"></script>
+
+	    <!-- Javascript interno --> 
+	    
+	    <script type="text/javascript">
+	    	// Alert('Teste de inclusão de JavaScript')
+	    	
+	    	// string
+	    	var texto = "Aula de JavaScriptor";
+
+	    	// float
+	    	var numeroFracionado = 10.7;
+
+	    	// int
+	    	var numero = -7;
+
+	    	//boolean
+	    	var teste = true; 
+	    		//true -> verdadeiro ou falso -> falso
+
+	    	document.write(texto);
+	    	document.write('<br>');
+
+	    	//console.log(t2);
+
+
+	    	//concatenação
+	    	var tex1 = "Aula ";
+	    	var tex2 = "de JavaScripting";
+
+	    	document.write(tex1 + tex2);
+	    	document.write('<br>');
+
+
+	    	//arrays
+	    	var lista_frutas = ['Banana', 'Maça', 'Morango', 'Uva'];
+	    	document.write(lista_frutas[3]);
+	    	document.write('<br>');
+
+	    	//arrays multidimensionais - aula 150
+	    	//arrays de arrays
+
+	    	var lista_coisas = Array();
+
+	    	lista_coisas ['verde'] = Array();
+	    	lista_coisas ['amarela'] = Array();
+	    	lista_coisas ['branco'] = Array('Papel', 'Cola', 'Pato');
+
+	    	lista_coisas['verde'][1] = 'Abacate';
+	    	lista_coisas['verde'][2] = 'Grama';
+	    	lista_coisas['verde'][3] = 'Couve';
+
+	    	lista_coisas['amarela'][1] = 'Melão';
+	    	lista_coisas['amarela'][2] = 'Sol';
+	    	lista_coisas['amarela'][3] = 'Queijo';
+
+	    	document.write(lista_coisas['verde'][2]);
+	    	document.write('<br>');
+
+	    	document.write(lista_coisas['amarela'][2]);
+	    	document.write('<br>');
+
+	    	document.write(lista_coisas['branco'][2]);
+	    	document.write('<br>');
+
+	    	//if else - aula 153
+	    	// ==
+	    	// ===
+	    	// !=- <>
+	    	// !==
+	    	// <
+	    	// >
+	    	if(2 == 3){
+	    		document.write('2 igual 3 - verdadeiro');
+	    	} else {
+	    		document.write('2 igual 3 - falso');
+	    	}
+	    	document.write('<br>');
+
+	    	
+	    	//if else - aula 155
+	    	// &&
+	    	// ||
+	    	// !
+
+	    	
+	    	// var nota = prompt('Digite a nota:');
+	    	// var faltas = prompt('Digite as faltas:');
+			var nota = 8;
+			var faltas = 20;
+
+	    	var media = 7;
+	    	var faltas_limite = 15;
+
+	    	if (nota >= media && faltas <= faltas_limite) {
+	    		document.write('Aprovado');
+	    	} else {
+	    		document.write('Reprovado');
+	    	}
+	    	document.write('<br>');
+	    	
+			
+			// aula 156 - switch
+
+	    	var opcao = 1;
+
+	    	// usa a função == (não esqueça do breack)
+	    	switch(opcao){
+	    		case 1:
+	    			document.write('op 1');
+	    			break;
+
+	    		case 1:
+	    			document.write('op 2');
+	    			break;
+
+	    		//opcianal
+	    		default:
+	    			document.write('op inválida');
+	    	}
+	    	document.write('<br>');
+
+
+	    	//aula 158 - Calculos
+
+	    	var num1 = 9;
+	    	var num2 = 2;
+
+	    	document.write('A soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2));
+	    	document.write('<br>');
+	    	document.write('O módulo entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2));
+	    	document.write('<br>');
+	    	document.write('O incremento de ' + num1 + ' é: ' + (++num1));
+	    	document.write('<br>');
+	    	document.write('O decremento de ' + num1 + ' é: ' + (--num1)); // -- antes já resolve
+	    	document.write('<br>');
+	    	document.write('O decremento de ' + (num1--) + ' será: '); // --  depois registra
+	    	document.write('<br>');
+	    	document.write('Resultado: ' + num1);
+	    	document.write('<br>');
+
+	    	// caso queria usar o prompt
+	    	// tem o comando parseInt e parseFloat
+	    	// para definir o tipo de variavel 
+
+	    </script>
+
+	</head>
+	<body >
+		
+		
+<br><br><br>
+		<div class="container">
+			<h1 class="card-header"> JavaScript - o que é - 144 </h1>
+			<br>
+			<h3>Linguagen de Alto nível </h3>
+			<h3>Client-side (executa no browser) </h3>
+			<h3>Possibilita tratar e aplicar dinâmica aos elementos </h3>
+			<h3>Linguagem interpretada </h3>
+			<img src="imagens/javascript.png">
+			<p>
+				comentário de uma linha <br>
+				<span style="background: gray">
+					// comentário <br>
+				</span>
+					comentário de várias linhas<br>
+				<span style="background: gray">
+					/* comentário <br>
+					de várias linhas */ <br>
+				</span>
+			</p>
+
+			<img src="imagens/javascript2.png">
+			<h1>Aula 149</h1>
+			<img src="imagens/javascript3.png">
+			<h1>Aula 150</h1>
+			<img src="imagens/javascript4.png">
+			<h1>Aula 151</h1>
+			<img src="imagens/javascript5.png">
+			<h1>Aula 152</h1>
+			<img src="imagens/javascript6.png">
+			<h1>Aula 154</h1>
+			<img src="imagens/javascript6.png">
+			<h1>Aula 157</h1>
+			<img src="imagens/javascript7.png">
+
+		</div>
+
+
+
+		
+<br><br><br>
+		<!-- barra de navegação de todas as aulas -->
+		<div style="width: auto; height: auto; position: absolute; right: 0; top: 0; border: 1px solid red;"> 
+			<a href="index.html">Início</a> -
+			<a href="projetox110.html">Voltar</a> -
+			<a href="projetox160.html">Próxima</a>
+		</div>
+
+			<!--
+				<X!-- jQuery (necessary for Bootstrap's JavaScript plugins) --X>
+			    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			    <X!-- Include all compiled plugins (below), or include individual files as needed --X>
+			    <script src="bootstrap/js/bootstrap.min.js"></script>
+			-->
+
+		<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    
+	    <!-- Aula 118 - Tooltips -->
+	    <script type="text/javascript">
+	    	$(function () {
+ 				$('[data-toggle="tooltip"]').tooltip()
+ 				$('[data-toggle="popover"]').popover()
+			})
+	    </script>
+
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>

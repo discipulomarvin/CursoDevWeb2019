@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu site</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		body {
+			background: #61bd8c;
+		}
+
+		#conteudo-principal{
+			background: #ffffff;
+			padding: 10px;
+			width: 600px;
+			height: 1500px;
+			margin: 30px auto;
+
+		}
+
+		.caixa{
+			background: #1e6f44;
+			width: 150px;
+			height: 150px;
+			color: #ffffff;
+		}
+
+		#relativa{
+			position: relative;
+			left: -30px;
+			top: -20px;
+		}
+
+		#absoluta{
+			position: absolute;
+			/*top: 0;*/
+			right: 0;
+		}
+
+		#fixa{
+			position: fixed;
+		}
+
+	</style>
+
+</head>
+<body >
+	<h1> CSS - Posicionamento - 56 </h1>
+	
+	<div >
+		<br><br>
+		
+		<br><br>
+	</div>
+
+	<div id="conteudo-principal">
+		
+		<h2 align="center"> Position </h2>
+
+		<h2> Relative </h2>
+		<div id="relativa" class="caixa">Relative</div>
+
+		
+		<h2> Absolute </h2>
+		<div id="absoluta" class="caixa">Absolute <br>
+			Absoluta em relação ao parente mais proxímo que tenha position
+		</div>
+
+		
+		<h2> Fixed </h2>
+		<div id="fixa" class="caixa">Fixed <br>
+			Fixa referente a area visualida pelo navegador <br>
+			Ótimo para menu
+		</div>
+	</div>
+	
+	
+
+
+	<div style="width: auto; height: auto; position: absolute; right: 0; top: 0; border: 1px solid red;"> 
+	<a href="index.html">
+		Início
+	</a> -
+	<a href="projeto54.html">
+		Voltar
+	</a> -
+	<a href="projeto59.html">
+		Próxima
+	</a> </div>
+
+</body>
+</html>

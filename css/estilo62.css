@@ -1,0 +1,20 @@
+body {
+	background: #61bd8c;
+}
+
+#conteudo-principal {
+	background: #ffffff;
+	padding: 10px;
+	width: 600px;
+	margin: 30px auto;
+	text-align: center;
+
+}
+
+.caixa {
+	background: #1e6f44;
+	width: 250px;
+	color: #ffffff;
+	margin: 30px auto;
+	padding: 5px;
+}

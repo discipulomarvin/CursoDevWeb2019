@@ -1,0 +1,119 @@
+.clear {
+	clear: both;
+}
+
+/* 86 - Sombras */
+#box86-sombra {
+	width: 400px;
+	height: 300px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+	/**/
+	box-shadow: 4px 4px 10px 20px black, -10px -10px 50px red;
+}
+
+#box86-sombra h1 {
+	color: white;
+	font-size: 60px;
+	text-shadow: 200px -20px 3px black;
+}
+
+#box86-sombra h2 {
+	color: white;
+	font-size: 60px;
+	text-shadow: 20px 20px rgba(0,0,0,0.5);
+}
+
+#box86-sombra h3 {
+	color: white;
+	font-size: 60px;
+	text-shadow: 4px 4px black;
+}
+
+/* 90 - Animação */
+@keyframes animacao-box {
+	from {
+		background: red; 
+		border-radius: 0px; 
+		top: 0; 
+		left: 0;
+	}
+	to {
+		background: yellow; 
+		border-radius: 300px; 
+		top: 50px; 
+		left: 200px
+	}
+}
+
+#box90-animacao {
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+	/* tudo separado:
+	animation-name: animacao-box;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	*/
+
+	/*ou pode ser feito como abaixo*/
+	animation: animacao-box 5s 3s 2 alternate;
+}
+
+/* 91 - Transições */
+#box91-transicao {
+	width: 100px;
+	height: 100px;
+	background: orange;
+}
+
+#box91-transicao:hover {
+	width: 400px;
+	background: black;
+	/*
+	transition: background 3s, width 8s;
+	*/
+	transition: all 2s;
+}
+
+/* 99 - Bootstrap */
+.marcador99 {
+	background: #fe9d9d;
+	border: 1px solid #f94646;
+}
+
+.marcador99b {
+	background: #5bf946;
+	border: 1px solid #36ae26;
+}
+
+.item138a {
+	width: 200px;
+	height: 200px;
+	border:2px solid black;
+	overflow: hidden;
+	float: left;
+	margin: 20px;
+}
+
+.item138b {
+	width: 200px;
+	height: 200px;
+	border:2px solid black;
+	overflow: scroll;
+	float: left;
+	margin: 20px;
+}
+
+.item138c {
+	width: 200px;
+	height: 200px;
+	border:2px solid black;
+	overflow: auto;
+	float: left;
+	margin: 20px;
+}
